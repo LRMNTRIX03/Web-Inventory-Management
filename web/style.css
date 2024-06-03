@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.header {
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    background-color: blueviolet;
+}
+.dasboard {
+    overflow: hidden;
+    width: 100%;
+}
+
+.menu_dasboard {
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+}
+
+.menu, .menu_barang,.menu_pembelian, .menu_penjualan, .menu_po, .menu_stok, .menu_laporan, .menu_customer, .menu_km, .setting, .isi_menu_km {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: white;
+    margin: 5px;
+    font-size: medium;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu:hover, .menu_barang:hover, .menu_pembelian:hover, .menu_penjualan:hover, .menu_po:hover, .menu_stok:hover, .menu_laporan:hover, .menu_customer:hover, .menu_km:hover, .setting:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.menu_km {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_km_n {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#wrapper_isi_menu_km {
+    display: none;
+}
+.isi_menu_km {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.isi_menu_km a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu_profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+}
+.menu_logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.menu_name {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.text_name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.admin {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rounded {
+    height: 10px;
+    width: 10px;
+    background-color: #41CF51;
+    border-radius: 100%;
+}
+
+.content {
+    width: 80%;
+    height: 100vh;
+    background-color: #101221;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+}
+.cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+.card {
+    width: 23%;
+    background-color: #41CF51;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.card_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.user_logo {
+    width: 70px;
+}
+
+
+.card_footer {
+    text-align: center;
+    background-color: #1BD0FD;
+}
+
+
+.conten_barang {
+    margin-left: 20px;
+    width: 50%;
+    height: 70vh;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card_barang_header {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #1BD0FD;
+    color: white;
+}
+
+/* barang */
+.breadcrumb {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tambah, .stok-minimal,.refresh {
+    padding: 10px 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.table_card {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.entries {
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.input {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+table {
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.opsi {
+    display: flex;
+}
+.edit,.hapus {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Tambah */
+.form-container {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+label {
+    display: block;
+}
+input[type="text"], select {
+    width: 50%;
+    padding: 8px;
+    margin: 6px 0 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-buttons {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn-blue {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}
+.btn-red {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
